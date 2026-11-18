@@ -13,6 +13,11 @@ CREATE TABLE IF NOT EXISTS notes (
 )
 ```
 
+## Add to project
+```bash
+go install github.com/Astra-Sattelite/sqlfmt/cmd/sqlfmt@latest
+```
+
 ## Build
 
 ```bash
