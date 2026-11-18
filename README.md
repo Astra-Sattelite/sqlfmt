@@ -36,15 +36,17 @@ make test
 Install the **Run on Save** extension by `emeraldwalk`, then use:
 
 ```json
-{
-  "emeraldwalk.runonsave": {
+"emeraldwalk.runonsave": {
     "autoShowOutputPanel": "always",
     "commands": [
       {
         "match": "\\.sql$",
-        "cmd": "\"${workspaceFolder}/bin/sqlfmt\" \"${file}\""
+        "cmd": "sqlfmt \"${file}\""
+      },
+      {
+        "match": ".*",
+        "cmd": "make -C \"${workspaceFolder}\""
       }
     ]
   }
-}
 ```
