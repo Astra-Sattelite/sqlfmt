@@ -1,0 +1,13 @@
+# Build output
+/bin/
+
+# Go test and coverage output
+*.test
+*.out
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/*
+!.vscode/settings.json
